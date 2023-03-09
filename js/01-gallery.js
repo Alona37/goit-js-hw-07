@@ -41,6 +41,7 @@ galleryContainer.addEventListener("click", event => {
 		console.log(e.code);
 		if (e.code === "Escape") {
 			modal.close();
+			document.removeEventListener("keydown", galleryContainer);
 		}
 	});
 });
